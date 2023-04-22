@@ -27,6 +27,8 @@ export Pokemon
 
 ##########################################################################################
 
+const dataDir = joinpath(dirname(@__DIR__), "data")
+
 const targetStrength = 3.5
 
 const tierToValue = Dict(
@@ -255,17 +257,17 @@ function createTeam(mega::Pokemon, box::Vector; showImage = true, saveName = "")
 
     if showImage
         img = mosaic(
-            load(string("megaImages\\", t.mega.name, ".png")),
-            load(string("pokemonImages\\", t.rest[1].name, ".png")),
-            load(string("pokemonImages\\", t.rest[2].name, ".png")),
-            load(string("pokemonImages\\", t.rest[3].name, ".png")),
-            load(string("pokemonImages\\", t.rest[4].name, ".png")),
-            load(string("pokemonImages\\", t.rest[5].name, ".png"));
+            load(joinpath(dataDir, "megaImages", t.mega.name * ".png")),
+            load(joinpath(dataDir, "pokemonImages", t.rest[1].name * ".png")),
+            load(joinpath(dataDir, "pokemonImages", t.rest[2].name * ".png")),
+            load(joinpath(dataDir, "pokemonImages", t.rest[3].name * ".png")),
+            load(joinpath(dataDir, "pokemonImages", t.rest[4].name * ".png")),
+            load(joinpath(dataDir, "pokemonImages", t.rest[5].name * ".png"));
             nrow = 2
             )
             imshow(img)
             if saveName != ""
-                save(string(saveName, ".png"), img)
+                save(saveName * ".png", img)
             end
     end
     return t
