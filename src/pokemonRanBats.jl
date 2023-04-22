@@ -86,7 +86,6 @@ end
 ##########################################################################################
 
 Pokemon(name, type1, type2, tier) = Pokemon(name, type1, type2, getResistance(type1, type2), getWeakness(type1, type2), tier)
-Pokemon(name, type1, tier) = Pokemon(name, type1, "null", tier)
 Pokemon(name, type1, type2) = Pokemon(name, type1, type2, "B")
 Pokemon(name, type1) = Pokemon(name, type1, "null", "B")
 
