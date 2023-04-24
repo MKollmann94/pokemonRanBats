@@ -249,7 +249,7 @@ function addPokemon!(team::Team, box::Vector)
 end
 
 #Creates a team around mega with Pokemon from box
-function createTeam(mega::Pokemon, box::Vector; showImage = true, saveName = "")
+function createTeam(mega::Pokemon, box::Vector; sets = "", showImage = true, saveName = "")
     t = Team(mega)
     for i = 1 : 5
         addPokemon!(t, box)
@@ -265,10 +265,21 @@ function createTeam(mega::Pokemon, box::Vector; showImage = true, saveName = "")
             load(joinpath(dataDir, "pokemonImages", t.rest[5].name * ".png"));
             nrow = 2
             )
-            imshow(img)
-            if saveName != ""
-                save(saveName * ".png", img)
+        imshow(img)
+        if saveName != ""
+            save(string(saveName, ".png"), img)
+            txt = ""
+            for poke in t.rest
+                pokeSets = split(sets, poke.name)
+                len = length(pokeSets)
+                for i in 2 : len
+                    txt = txt * poke.name * split(pokeSets[i], "\r\n\r\n")[1] * "\r\n\r\n"
+                end
             end
+            w = open(saveName * ".txt", "w")
+            write(w, txt)
+            close(w)
+        end
     end
     return t
 end
