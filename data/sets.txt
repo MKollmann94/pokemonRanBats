@@ -57,10 +57,10 @@ Ability: Ice Body
 Tera Type: Ice  
 EVs: 252 HP / 4 Def / 252 SpD  
 Sassy Nature  
-- Avalanche  
-- Body Press  
-- Aurora Veil  
-- Snowscape  
+- Rapid Spin  
+- Earthquake
+- Recover
+- Ice Spinner
 
 Aurorus @ Light Clay  
 Ability: Snow Warning  
@@ -127,12 +127,13 @@ Jolly Nature
 Goodra @ Assault Vest  
 Ability: Sap Sipper  
 Tera Type: Dragon  
-EVs: 252 HP / 252 Def / 4 SpA  
-Sassy Nature  
-- Earthquake  
+EVs: 252 HP / 4 Def / 252 SpA   
+IVs: 0 Atk
+Modest Nature  
+- Draco Meteor
 - Sludge Wave  
 - Thunderbolt  
-- Dragon Claw  
+- Flamethrower
 
 Goodra @ Choice Scarf  
 Ability: Sap Sipper  
@@ -142,7 +143,7 @@ Timid Nature
 IVs: 0 Atk  
 - Draco Meteor  
 - Fire Blast  
-- Thunderbolt  
+- Sludge Wave
 - Ice Beam  
 
 Aromatisse @ Leftovers  
@@ -274,7 +275,7 @@ IVs: 0 Atk
 Chesnaught @ Leftovers  
 Ability: Overgrow  
 Tera Type: Grass  
-EVs: 4 HP / 252 Atk / 252 Def  
+EVs: 252 HP / 252 Atk / 4 Def  
 Adamant Nature  
 - Drain Punch  
 - Wood Hammer  
@@ -422,7 +423,7 @@ EVs: 252 HP / 252 Atk / 4 Def
 Brave Nature  
 - Shadow Sneak  
 - Iron Head  
-- Shadow Ball  
+- Close Combat
 - King's Shield  
 
 Aegislash @ Choice Specs  
@@ -445,17 +446,6 @@ IVs: 0 Atk
 - Substitute  
 - Thunderbolt  
 - Dazzling Gleam  
-
-Dedenne @ Choice Specs  
-Ability: Cheek Pouch  
-Tera Type: Electric  
-EVs: 4 HP / 252 SpA / 252 Spe  
-Timid Nature  
-IVs: 0 Atk  
-- Dazzling Gleam  
-- Thunderbolt  
-- Hidden Power [Ice]  
-- Volt Switch  
 
 Dedenne @ Focus Sash  
 Ability: Pickup  
@@ -573,15 +563,15 @@ IVs: 0 Atk
 - Will-O-Wisp  
 - Sunny Day  
 
-Florges (F) @ Assault Vest  
+Florges (F) @ Lum Berry
 Ability: Flower Veil  
 Tera Type: Fairy  
-EVs: 252 HP / 4 Def / 252 SpA  
-Modest Nature  
+EVs: 252 HP / 252 Def / 4 SpA  
+Bold Nature  
 IVs: 0 Atk  
 - Moonblast  
-- Energy Ball  
-- Psychic  
+- Synthesis
+- Calm Mind
 - Hidden Power [Ground]  
 
 Florges (F) @ Leftovers  
@@ -619,8 +609,8 @@ IVs: 0 Atk
 Sylveon @ Leftovers  
 Ability: Pixilate  
 Tera Type: Fairy  
-EVs: 252 HP / 4 Def / 252 SpA  
-Modest Nature  
+EVs: 252 HP / 252 Def / 4 SpD 
+Bold Nature  
 IVs: 0 Atk  
 - Hyper Voice  
 - Toxic  
